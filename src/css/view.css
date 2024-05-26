@@ -1,0 +1,126 @@
+
+
+.talle{
+    padding: 8px;
+    display: flex;
+    border: 0.5px solid;
+    justify-content: space-around;
+    margin-bottom:40px;
+}
+
+.view-container-img{
+	background: #fff;
+	padding: 20px 0px;
+}
+
+.view-card-img{
+	height: 390px;
+}
+
+.view-card-img img{
+	object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.view-card-container-title{
+    margin-bottom:40px;
+}
+
+.title{
+	padding: 10px 0px;
+}
+
+.delete{
+	color:#da0a0afc;
+	display: flex;
+	justify-content: center;
+}
+
+/* icon y price*/
+
+
+.price-view-container{
+	display: flex;
+	padding: 10px 0px;
+	width: 100%;
+}
+
+
+.price-compra{
+	display: flex;
+	flex-direction: column;
+}
+/*icono de cantidad*/
+
+.compra-container{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0px;
+}
+
+
+.cantidad{
+	width: 50px;
+}
+
+.cantidad input{
+	width: 100%;
+    border: 1px solid;
+    text-align: center;
+}
+
+.price-subtotal{
+	display: flex;
+	flex-direction: column;
+}
+
+.info-product{
+	padding: 10px;
+	text-align: initial;
+}
+
+/*position absolute*/
+
+.vista{ 
+   position: fixed;
+   top:0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   height: 100vh;
+   z-index: 100;   
+   background: #fff;
+   overflow: auto;
+}
+
+/* cerrar */
+.close{
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	padding:10px 15px;
+}
+
+.close a{
+	width: 30px;
+	height: 20px;
+}
+
+/*color del producto*/
+.color-compra{
+	border: none;
+	margin-bottom: 20px;
+}
+
+.color-compra .color-compra-select{
+	width: 40px;
+	height: 40px;
+	background: red;
+   cursor: pointer;
+}
+
+.color-compra-select:hover{
+      opacity: 0.5;
+      border: 2px solid #000;
+}

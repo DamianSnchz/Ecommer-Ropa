@@ -1,0 +1,116 @@
+
+.nav-oferta{
+	background: #ff7200fa;
+	text-align: center;
+	padding: 1%;
+	color: #fff;
+}
+
+nav{
+	padding: 3% 0%;
+}
+
+.nav-container{
+   display: flex;
+   justify-content: space-between;
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px 2px 4px 0px;
+    background: #fff;
+    left: 0;
+    top: 0;
+    align-items: center;
+}
+
+.nav-carrito{
+	display: flex;
+	align-items: center;
+}
+
+
+.hamburguesa, .logo, .nav-carrito{
+   padding: 8px;
+   color: #6d6b6b;
+   cursor: pointer;
+}
+
+
+/*navegation */
+.open {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	height: 100vh;
+	width: 90%;
+	background: #fff;
+  top: 0;
+	z-index: 10;
+	left: 0;
+}
+
+
+.open .close{
+  z-index: 20;
+	padding: 20px 20px 0px 20px;
+}
+
+
+.open ul{
+	display: flex;
+	align-items: space-between;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.open ul li{
+	border-bottom:1px solid #ccc;
+	padding: 20px 10px;
+}
+
+.open ul li a{
+  color: #6e6e6e;
+}
+
+.nav-query{
+	display: none;
+}
+/*contador carrito*/
+
+.cont-carrito{
+	  background: #198754;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-carrito span{
+	color: #fff;
+
+}
+
+/*medida query*/
+
+@media (min-width:600px){
+	.nav-container{
+		height: 80px;
+	}
+	.hamburguesa{
+		display: none;
+	}
+	.nav-query{
+		display: block;
+		width: 50%;
+		padding: 8px;
+	}
+	.nav-query ul{
+		display: flex;
+		justify-content: space-between;
+		margin: 0;
+	}
+}

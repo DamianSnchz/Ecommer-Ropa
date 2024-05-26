@@ -1,0 +1,76 @@
+.vista-compra{
+	position: relative;
+	z-index: 0;
+	height: auto;
+	width: 100%;
+}
+
+
+.color-compra{
+	border: none;
+	margin-bottom: 20px;
+}
+
+.color-compra .color-compra-select{
+	width: 40px;
+	height: 40px;
+	background: red;
+   cursor: pointer;
+}
+
+.color-compra-select:hover{
+  opacity: 0.5;
+      border: 2px solid #000;
+}
+
+/*medios de pago*/
+
+.medio-pago{
+	margin: 20px 0px;
+}
+
+.medio-pago .tarjetas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tarjetas .img-pago{
+	padding: 10px;
+}
+
+
+/*total de envio*/
+
+.icon-envio{
+   display: flex;
+}
+
+.icon-camion{
+	margin-right: 10px;
+}
+
+.calcular-envio{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0px;
+	height: 40px;
+}
+
+.codigo-postal{
+	border: 1px solid #000;
+}
+.codigo-postal input{
+	border: node;
+    width: 100%;
+    height: 100%;
+    margin-right: 5px;
+}
+
+.price-envio{
+	border: 1px solid #000;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}

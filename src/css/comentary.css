@@ -1,0 +1,38 @@
+.comentary-container{
+	border-radius: 3px;
+    margin: 40px 0px;
+    color: #000;
+}
+
+.comentary-usuario{
+	margin: auto;
+    text-align: center;
+}
+
+.comentary-usuario h4{
+	color:#ed7013;
+}
+
+.comentary-img{
+	border:1px solid #000;
+	border-radius: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    height: 100px;
+    width: 140px;
+    z-index:10;
+    position: relative;
+}
+
+.comentary-img img{
+	position: absolute;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: center;
+}
+
+
+.comentary{
+	padding: 0px 20px;
+	text-align: center;
+}
