@@ -1,22 +1,6 @@
-.buscador{
-  padding: 1% 0%;
-}
-
-.buscador input,select{
-	background: #ff7200fa;
-    border: none;
-    padding: 0.5% 1%;
-    color: white;
-    height: 2rem;
-}
-
-.buscador input{
-	border-right: 1px solid #fff;
-}
 
 .carrousel-container{
-	margin: 10px 0px;
-	background: #fff;
+    background: #fff;
 }
 
 .carrousel-container img{
@@ -72,4 +56,27 @@
     border-radius: 2px;
     border:none;
     padding: 4px 0px;
+}
+
+/*medida query*/
+
+/*medida query celular*/
+@media (max-width:600px){
+	.carrousel-container{	
+		margin: 11vh 0vh 0vh 0vh;
+	}
+}
+
+/*medida query tablet*/
+@media (min-width:600px){
+	.carrousel-container{	
+		margin: 24vh 0vh 0vh 0vh;
+	}
+}
+
+/*medida query computadora*/
+@media (min-width:1000px){
+	.carrousel-container{	
+		margin: 34vh 0vh 0vh 0vh;
+	}
 }

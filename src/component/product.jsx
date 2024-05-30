@@ -42,16 +42,6 @@ const {activ, setActiv,datos,vista, setVista, textInput} = useCartContext();
                      </button>
                   </div>
               </div>
-              {/*seccion de busqueda y filtrado*/}
-              <div className="buscador mb-3">
-                 <input className="col-6" type="text" name="buscar" placeholder="Buscar" onChange={textInput}/>
-                 <select className="col-6" name="filtrar" onChange={textInput}>
-                     <option>Filtrar</option>
-                     <option value="calzado">Calzados</option>
-                     <option value="pantalon">Pantalones</option>
-                     <option value="remera">Remeras</option>                   
-                 </select>
-              </div>
               {/*seccion de tarjetas de productos */}
               <div className="container text-center mb-3">
                  <div className=' row row-cols-2'>
