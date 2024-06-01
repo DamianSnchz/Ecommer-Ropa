@@ -4,35 +4,99 @@
    "title":"calzado",
    "price":333,
    "img":"../img/th.png",
-   "type":"calzado"
+   "type":"calzado",
+   "descuento":500,
+   "ancho": 1.5,
+   "alto": 2.6,
+   "peso": 5
 },
 {  
    "id":2,
    "title":"bermuda",
    "price":5322,
    "img":"../img/th.png",
-   "type":"pantalon"
+   "type":"pantalon",
+   "descuento":500,
+   "ancho": 1.5,
+   "alto": 2.6,
+   "peso": 5
 },
 {  
    "id":3,
    "title":"chomba",
    "price":8654,
    "img":"../img/ff.png",
-   "type":"remera"
+   "type":"remera",
+   "descuento":500,
+   "ancho": 1.5,
+   "alto": 2.6,
+   "peso": 5
 },
 {  
    "id":4,
    "title":"chupin",
    "price":4555,
    "img":"../img/th.png",
-   "type":"pantalon"
+   "type":"pantalon",
+   "descuento":500,
+   "ancho": 1.5,
+   "alto": 2.6,
+   "peso": 5
 },
 {  
    "id":5,
    "title":"conjunto",
    "price":333,
    "img":"../img/ff.png",
-   "type":"calzado"
+   "type":"calzado",
+   "descuento":500,
+   "ancho": 1.5,
+   "alto": 2.6,
+   "peso": 5
+},
+{  
+   "id":5,
+   "title":"conjunto",
+   "price":333,
+   "img":"../img/ff.png",
+   "type":"calzado",
+   "descuento":500,
+   "ancho": 1.5,
+   "alto": 2.6,
+   "peso": 5
+},
+{  
+   "id":5,
+   "title":"conjunto",
+   "price":333,
+   "img":"../img/ff.png",
+   "type":"calzado",
+   "descuento":500,
+   "ancho": 1.5,
+   "alto": 2.6,
+   "peso": 5
+}
+,{  
+   "id":5,
+   "title":"conjunto",
+   "price":333,
+   "img":"../img/ff.png",
+   "type":"calzado",
+   "descuento":500,
+   "ancho": 1.5,
+   "alto": 2.6,
+   "peso": 5
+},
+{  
+   "id":5,
+   "title":"conjunto",
+   "price":333,
+   "img":"../img/ff.png",
+   "type":"calzado",
+   "descuento":500,
+   "ancho": 1.5,
+   "alto": 2.6,
+   "peso": 5
 }
 ]
 

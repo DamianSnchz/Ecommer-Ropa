@@ -19,7 +19,7 @@ nav {
 
 
 .nav-oferta{
-	background: #ff7200fa;
+	background: var(--color-primario);
 	text-align: center;
 	padding: 1%;
 	color: #fff;
@@ -34,7 +34,7 @@ nav {
 
 .hamburguesa, .logo, .nav-carrito{
    padding: 2%;
-   color: #ffffff;
+   color: #fff;
    cursor: pointer;
 }
 
@@ -100,12 +100,13 @@ nav {
   
   .buscador input,select{
 	  padding: 1% 2%;
-	  color: white;
+	  color: #000;
 	}
   
   .buscador input{
 	  width:100%;
 	  border: none;
+	  background: #fff;
   }
 
 

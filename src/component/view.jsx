@@ -31,69 +31,75 @@ function View() {
                         {/*seccion de información del producto */}
                         <div className='info-product'>
                             <div className="view-card-container-title">
-                                <div className="title">
-                                    <h6>
+                                <span className="view-title">
+                                    <h1>
                                         {element.title}
-                                    </h6>
-                                </div>
+                                    </h1>
+                                </span>
                                 <div className="price-compra">
                                     <span>${element.price}</span>
                                 </div>
                             </div>
-                            <div className='text-title mb-2'>
-                                Talle:
+                            {/*seccion para seleccionar color*/}
+                            <div className="view-container-color">
+                                <h2 className='view-subtitle'>
+                                    Color:
+                                </h2>
+                                <div className='color-compra'>
+                                    <div className="color-compra-select" style={{ background: 'blue' }}>
+                                    </div>
+                                    <div className="color-compra-select" style={{ background: 'red' }}>
+                                    </div>
+                                    <div className="color-compra-select" style={{ background: 'green' }}>
+                                    </div>
+                                    <div className="color-compra-select" style={{ background: 'yellow' }}>
+                                    </div>
+                                </div>
                             </div>
                             {/*seccion para seleccionar el talle */}
-                            <div className='talle'>
-                                <div className="form-check form-check-inline">
-                                    <input className="form-check-input" type="checkbox" value="option1" />
-                                    <label className="form-check-label" htmlFor="inlineCheckbox1">M</label>
-                                </div>
-                                <div className="form-check form-check-inline">
-                                    <input className="form-check-input" type="checkbox" value="option1" />
-                                    <label className="form-check-label" htmlFor="inlineCheckbox1">L</label>
-                                </div>
-                                <div className="form-check form-check-inline">
-                                    <input className="form-check-input" type="checkbox" value="option1" />
-                                    <label className="form-check-label" htmlFor="inlineCheckbox1">XL</label>
-                                </div>
-                                <div className="form-check form-check-inline">
-                                    <input className="form-check-input" type="checkbox" value="option1" />
-                                    <label className="form-check-label" htmlFor="inlineCheckbox1">XXL</label>
-                                </div>
-                                <div className="form-check form-check-inline">
-                                    <input className="form-check-input" type="checkbox" value="option1" disabled />
-                                    <label className="form-check-label" htmlFor="inlineCheckbox1">XXL</label>
-                                </div>
-                            </div>
-                            <div className='text-title'>
-                                Color:
-                            </div>
-                            {/*seccion para seleccionar color*/}
-                            <div className='talle color-compra'>
-                                <div className="color-compra-select" style={{ background: 'blue' }}>
-                                </div>
-                                <div className="color-compra-select" style={{ background: 'red' }}>
-                                </div>
-                                <div className="color-compra-select" style={{ background: 'green' }}>
-                                </div>
-                                <div className="color-compra-select" style={{ background: 'yellow' }}>
+                            <div className="view-container-talle">
+                                <h2 className='view-subtitle'>
+                                    Talle:
+                                </h2>
+                                <div className='talle'>
+                                    <select class="form-select form-select-sm" aria-label="Small select example">
+                                        <option selected></option>
+                                        <option value="1">S</option>
+                                        <option value="2">M</option>
+                                        <option value="3">L</option>
+                                    </select>
                                 </div>
                             </div>
                             {/*seccion de compra*/}
                             <div className="compra-container">
-                                <div className='cantidad'>
+                                <h2 className='view-subtitle col-2'>
                                     Cantidad:
-                                    <input type="number" defaultValue={1} onChange={(ev) => cantidad(parseInt(ev.target.value))} />
-                                </div>
-                                <div className='price-subtotal'>
-                                    Subtotal:
-                                    <span>$22222</span>
-                                </div>
+                                </h2>
+                                <input type="number" defaultValue={1} onChange={(ev) => cantidad(parseInt(ev.target.value))} />
                             </div>
                             {/*añadir al carrito*/}
-                            <div className='carrito-agregar col-12'>
-                                <button type="button" className="btn btn-primary col-12" onClick={() => { agregar(element, cant); }}>agregar</button>
+                            <div className='carrito-agregar'>
+                                <button type="button" className="btn btn-primary" onClick={() => { agregar(element, cant); }}>agregar carrito</button>
+                            </div>
+                            {/*informacion de envio gratis*/}
+                            <div className='view-container-info-envio'>
+                                <span className='info-envio-icono'>
+                                    <i className="fa-solid fa-cart-shopping fa-lg"></i>
+                                </span>
+                                <span className='info-envio'>
+                                    Envio gratis a partir de $5000
+                                </span>
+                            </div>
+                            {/*informacion del producto*/}
+                            <div className="div view-container-info">
+                                <h2 className="view-subtitle">
+                                    Información general
+                                </h2>
+                               <h3 className="info-producto">*Nombre: <span>{element.title}</span></h3>
+                                    <h3 className="info-producto">*Tipo: <span>{element.type}</span></h3>
+                                    <h3 className="info-producto">*Ancho: <span>{element.ancho}</span></h3>
+                                    <h3 className="info-producto">*Alto: <span>{element.alto}</span></h3>
+                                    <h3 className="info-producto">*Peso: <span>{element.peso}</span></h3>
                             </div>
                         </div>
                     </div>
