@@ -68,8 +68,7 @@ function Product() {
                                             </div>
                                             <span className="descuento-porcentaje">
                                                 %50 OFF
-                                             </span>
-                                            <View />
+                                            </span>
                                         </div>
                                     </div>
                                 </li>
@@ -78,6 +77,7 @@ function Product() {
                     </ul>
                 </div>
             </section>
+            <View />
         </>
     );
 }
