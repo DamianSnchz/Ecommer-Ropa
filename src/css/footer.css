@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   padding: 10px;
+  width: 30%;
+  color: white;
 }
 
        /*redes*/
@@ -17,4 +19,43 @@
 	color: #fff;
   padding: 8px;
   margin: 0px;
+}
+
+.container-footer{
+  display: flex;
+  justify-content: center;
+  background-color: #212529;
+}
+
+.redes-container{
+  width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logofooter{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imglogofooter{
+  width: 30%;
+  
+}
+
+.a-contacto{
+  text-decoration: none;
+  color: white;
+}
+
+.h6contacto{
+color: white;
+}
+
+.iconslogo{
+  color: white;
 }
