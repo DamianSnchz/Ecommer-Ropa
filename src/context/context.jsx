@@ -17,7 +17,7 @@ function ContextProvider({ children }) {
     //luego su valor pasara a setDatos() para ser mostrados
     const [buscar, setBuscar] = useState([]);
     // array carrito
-    const [carrito, setCarrito] = useState([]);
+    const [carrito, setCarrito] = useState([{"title" : "", "img":"", "price": 0, "cantidad": 0,"color":"", "talle":""}]);
     // abrir y cerrar las vista de carrito
     const [openCart, setOpenCart] = useState(false);
     // mostrar menu de navegacion mobile
@@ -75,25 +75,34 @@ function ContextProvider({ children }) {
         setProducto(objeto);
     }
     // funcion para agregar los productos al carrito "element" representa al producto y "x" a la cantidad de productos
-    const agregar = (element, x) => {
-        let newCarrito;
+    const agregar = (element, cant, color, talle) => {
+        //objeto para mostrar en el carrito
+        let newCarrito= [{"title" : "", "img":"", "price": 0, "cantidad": 0,"color":"", "talle":""}];
         //funcion find() me devuelve buscado
         let product = carrito.find(product => product.id === element.id);
         //si el producto ya existe en el carrito incrementara su cantidad 
         if (product) {
             //aumento la cantidad
-            product.cantidad += x;
-            //añado el objeto modificado al newObjeto por dispercion [...carrito]
-            newCarrito = [...carrito];
-        } else {
-            //si el producto no existe añado el atributo "cantidad" con el valor de "x"
-            product = { ...element, cantidad: x };
-            //añado el objeto modificado al newObjeto por dispercion [...carrito]
+            product.cantidad += cant;
+            //añado el objeto modificado al newObjeto 
             newCarrito = [...carrito, product];
+        } else {
+            //si el producto no existe añado los atributos
+            newCarrito.title = element.title;
+            newCarrito.img = element.img;
+            newCarrito.price = element.price;
+            newCarrito.color = color;
+            newCarrito.talle = talle;
+            newCarrito.cantidad = cant;
+            //añado el objeto modificado al newObjeto por dispercion [...carrito]
+            newCarrito = [...carrito, newCarrito];
         }
         //añado el array modificado al carrito para que sean mostrados
+        console.log("NewCarrito");
+        console.log(carrito);
         setCarrito(newCarrito);
-
+        console.log("Carrito");
+        console.log(carrito);
     }
 
     // function para calcular el subtotal de los productos 
