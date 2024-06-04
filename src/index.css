@@ -1,4 +1,17 @@
-
+:root{
+   --color-primario:#ff7200fa;
+   --color-secundario:#edeaea;
+   --color-letra-primario: #333;
+   --color-letra-secundario: #757575;
+   --font-family-mulish:mulish, sans-serif;
+   --font-family-arial:arial, sans-serif;
+   --medida-8: 8px;
+   --medida-10: 10px;
+   --medida-12: 12px;
+   --medida-14: 14px;
+   --medida-16: 16px;
+   --medida-18: 18px;
+}
 
 *{
 	margin: 0px;
@@ -7,7 +20,7 @@
 }
 
 body{
-	background: #edeaea;
+	background: var(--color-secundario);
 }
 
 ul{

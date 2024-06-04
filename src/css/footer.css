@@ -4,6 +4,7 @@
   padding: 10px;
   width: 30%;
   color: white;
+  align-items: center;
 }
 
        /*redes*/
@@ -15,16 +16,18 @@
 
 .copy-right{
 	text-align: start;
-	background: #ff7200fa;
+	background: rgb(255,117,5);
 	color: #fff;
   padding: 8px;
   margin: 0px;
+  font-size: 8px;
 }
 
 .container-footer{
   display: flex;
   justify-content: center;
-  background-color: #212529;
+  background-color: #3d444b;
+  justify-content: space-around;
 }
 
 .redes-container{
@@ -33,6 +36,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+align-items: center;
 }
 
 .logofooter{
@@ -43,19 +47,92 @@
 }
 
 .imglogofooter{
-  width: 30%;
+  width: 60%;
   
 }
 
 .a-contacto{
   text-decoration: none;
   color: white;
+  font-size: 7px;
 }
 
 .h6contacto{
 color: white;
+margin: 0;
+margin-bottom: 20px;
 }
 
 .iconslogo{
   color: white;
+}
+
+.h6contactos{
+  margin: 0%;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.iconcontacto{
+  font-size: 10px;
+}
+
+.contsecond{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+}
+
+/* color alternativo copir #34383d */
+
+@media (min-width: 600px) {
+  .imglogofooter{
+    width: 40%;
+  }
+  .h6contactos{
+    font-size: 20px;
+  }
+
+  .iconcontacto{
+    font-size: 15px;
+  }
+  .a-contacto{
+    font-size: 10px;
+  }
+  .copy-right{
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .imglogofooter{
+    width: 45%;
+  }
+  .h6contactos{
+    font-size: 24px;
+  }
+
+  .iconcontacto{
+    font-size: 16px;
+  }
+  .a-contacto{
+    font-size: 14px;
+  }
+
+  .copy-right{
+    font-size: 16px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .imglogofooter{
+    width: 30%;
+  }
+  .copy-right{
+    font-size: 20px;
+  }
 }

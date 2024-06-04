@@ -14,20 +14,21 @@ function Footer(){
 
 
          		<div className="contacto col-12">
-         			<h6 className='mb-4'>contactos</h6>
+         			<h6 className='h6contactos'>contactos</h6>
          			<ul>
-         				<li className='mb-3'>
-         				   <i className="fa-solid fa-phone fa-lg"></i>
-         				   <a className='a-contacto' href='#'>: +54386787</a>
+         				<li className=''>
+         				   <i className="fa-solid fa-phone fa-lg iconcontacto"></i>
+         				   <a className='a-contacto' href='#'> : +54386787</a>
          				</li>
          				<li className=''>
-         				   <i className="fa-solid fa-envelope fa-lg"></i>
-         				   <a className='a-contacto' href='#'>: tienda_online444@gmail.com</a>
+         				   <i className="fa-solid fa-envelope fa-lg iconcontacto"></i>
+         				   <a className='a-contacto' href='#'> : tienda_online444@gmail.com</a>
          				</li>
          			</ul>
          		</div>
 
          		<div className='redes-container'>
+					<div className='contsecond'>
          			<div className='title-h6'>
          				<h6 className='h6contacto'>Redes Sociales</h6>
          			</div>
@@ -42,6 +43,7 @@ function Footer(){
          			       <i className="fa-brands fa-tiktok fa-xl iconslogo" ></i>
          			    </a>
          		    </div>
+					 </div>
          		</div>
 
          		

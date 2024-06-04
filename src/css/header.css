@@ -1,28 +1,30 @@
+header{
+	display: flex;
+    flex-flow:column;
+    box-shadow: 0px 2px 4px 0px;
+    background:  #ff7200fa;
+	position:fixed;
+	top:0;
+	width: 100%;
+	z-index: 10;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	padding: 3% 0% 0% 0%;
+ }
+
 
 .nav-oferta{
-	background: #ff7200fa;
+	background: var(--color-primario);
 	text-align: center;
 	padding: 1%;
 	color: #fff;
 }
 
-nav{
-	padding: 3% 0%;
-}
-
-.nav-container{
-   display: flex;
-   justify-content: space-between;
-    position: fixed;
-    z-index: 50;
-    width: 100%;
-    height: 50px;
-    box-shadow: 0px 2px 4px 0px;
-    background: #fff;
-    left: 0;
-    top: 0;
-    align-items: center;
-}
 
 .nav-carrito{
 	display: flex;
@@ -31,8 +33,8 @@ nav{
 
 
 .hamburguesa, .logo, .nav-carrito{
-   padding: 8px;
-   color: #6d6b6b;
+   padding: 2%;
+   color: #fff;
    cursor: pointer;
 }
 
@@ -45,7 +47,7 @@ nav{
 	height: 100vh;
 	width: 90%;
 	background: #fff;
-  top: 0;
+    top: 0;
 	z-index: 10;
 	left: 0;
 }
@@ -79,11 +81,8 @@ nav{
 /*contador carrito*/
 
 .cont-carrito{
-	  background: #198754;
-    width: 18px;
+	width: 18px;
     height: 18px;
-    border-radius: 50%;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,13 +90,30 @@ nav{
 
 .cont-carrito span{
 	color: #fff;
-
 }
+
+/*Buscador*/
+.buscador{
+	padding: 0% 2% 2% 2%;
+    width: 100%;
+  }
+  
+  .buscador input,select{
+	  padding: 1% 2%;
+	  color: #000;
+	}
+  
+  .buscador input{
+	  width:100%;
+	  border: none;
+	  background: #fff;
+  }
+
 
 /*medida query*/
 
 @media (min-width:600px){
-	.nav-container{
+	nav{
 		height: 80px;
 	}
 	.hamburguesa{
