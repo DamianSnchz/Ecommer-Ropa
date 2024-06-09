@@ -11,6 +11,10 @@ function View() {
     //capturador de talle
     const [talle, setTalle] = useState("");
     
+    function capturaTalle(ev) {
+        setTalle(ev);
+    }
+
     function cantidad(ev) {
         setCant(ev);
     }
@@ -65,7 +69,7 @@ function View() {
                                     Talle:
                                 </h2>
                                 <div className='talle'>
-                                    <select className="form-select form-select-sm" aria-label="Small select example" onChange={(ev)=> setTalle(ev.target.value)}>
+                                    <select className="form-select form-select-sm" aria-label="Small select example" onChange={(ev)=> capturaTalle(ev.target.value)}>
                                         <option value="S" selected>S</option>
                                         <option value="M">M</option>
                                         <option value="L">L</option>
